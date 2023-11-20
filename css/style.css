@@ -1,0 +1,251 @@
+.cuerpo{
+    margin: 0px;
+    padding: 0px;
+    background-color:#141414;
+    background-image: url(/img/fondo.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+header {
+    display: flex;
+    background-color:#585857be;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.logo {
+    width: 220px;
+    border-radius: 2em;
+}
+
+.centrar{
+    backdrop-filter: blur(2px);
+    text-align: center;
+    background-color: #585857be;
+}
+
+.imagen {
+    display: none;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width:548px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: inline;
+        width: 200px;
+        margin: 10px;
+        border-radius: 2em;
+    }
+
+    .imagen {
+        display: inline;
+        width: 150px;
+        margin: 10px;
+        border-radius: 2em;
+    }
+
+    .imagen {
+        display: none;
+    }
+
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: inline;
+        background: #585857be;
+        margin-left: auto;
+    }
+
+
+    .no_ver {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .no_ver.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .abrir-menu.ocultar {
+        visibility: hidden;
+    }
+
+    .sacar {
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+/*estilos*/
+
+.no_ver {
+    margin: auto;
+}
+
+.sacar {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-right: 10px;
+}
+
+.espacio {
+    margin-left: 100px;
+}
+
+@media screen and (max-width:1120px) {
+    .espacio {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .espacio {
+        margin-left: 50px;
+    }
+}
+
+.bord {
+    margin-top: 10px;
+    font-size: 1.4em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 0px;
+}
+
+.bord:hover {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 0px;
+}
+
+.color {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: rgba(154, 152, 152, 0.608);
+}
+
+.color:hover {
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.608);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+/*Cards styles*/
+
+.container{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container .card{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 270px;
+    padding: 4px;
+    height: 450px;
+    background-color: rgba(162, 162, 162, 0.527);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+    font-size: 1em;
+}
+
+.container .card:hover{
+    background-color: rgb(48, 48, 48);
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0);
+    color: white;
+    padding: 6px;
+    font-size: 3em;
+}
+
+.container .card img{
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+.texto{
+    text-align: justify;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text2{
+    text-align: justify;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80px;
+}
+
+/*Formulario*/
+
+.formulario{
+    margin-top: 5px;
+    padding: 2px;
+    background-color: black;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    display: flexbox;
+    box-sizing: content-box;
+    color: rgb(68, 255, 0); 
+    text-align: center;
+}
+
+.formulario h1{
+    text-align: left;
+}
+
+.formulario input{
+    width: 95%;
+    border-radius: 4px;
+    border: 1px solid green;
+    font-family: "calibri";
+    color: rgb(241, 9, 214); 
+}
+
+.formulario input:hover{
+    background: rgb(255, 255, 255);
+}
+
