@@ -40,6 +40,10 @@ header {
         justify-content: space-between;
     }
 
+    .esspa{
+        margin-bottom: 230px;
+    }
+
     .logo {
         display: inline;
         width: 200px;
@@ -78,9 +82,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
 
     .no_ver.visible {
@@ -130,35 +132,21 @@ header {
 .bord {
     margin-top: 10px;
     font-size: 1.4em;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 3px;
+    border: none;
     padding: 0px;
 }
 
-.bord:hover {
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 0px;
-}
-
-.color {
+.color{
     color: aliceblue;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    border: 2px solid black;
-    border-radius: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 4px;
-    background-color: rgba(154, 152, 152, 0.608);
+    transition: all 0.35s;
 }
 
-.color:hover {
-    color: aliceblue;
-    background: rgba(0, 0, 0, 0.608);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 3px;
-    padding: 4px;
+.color:hover{
+    color:white;
 }
-
 /*Cards styles*/
 
 .container{
@@ -172,13 +160,13 @@ header {
     justify-content: center;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom:630px;
 }
 
 .container .card{
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 270px;
     padding: 4px;
     height: 450px;
@@ -187,6 +175,12 @@ header {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.25s;
     font-size: 1em;
+}
+
+@media screen and (max-width:767px) {
+    .container .card{
+        margin-right: auto;
+    }
 }
 
 .container .card:hover{
@@ -219,18 +213,50 @@ header {
 
 /*Formulario*/
 
+form{
+    margin-bottom: 20px;
+}
+
+.fx{
+    display: none;
+}
+
 .formulario{
     margin-top: 5px;
     padding: 2px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.350);
     border-radius: 4px;
-    font-family: "calibri";
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #00000069;
     display: flexbox;
-    box-sizing: content-box;
-    color: rgb(68, 255, 0); 
+    box-sizing: content-box; 
     text-align: center;
+    width: 400px;
+    margin: auto;
+    transition: all 0.40s;
+}
+
+.formulario:hover{
+    background-color: rgba(0, 0, 0, 0.750);
+    box-shadow: 7px 13px 37px #000000f3;
+}
+
+.formulario h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+}
+
+.desaparecer{
+    background: none;
+    border: none;
+    width: 130px;
+    margin: auto;
+    color: gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:120%;
+}
+
+.aparecer{
+    display: block;
 }
 
 .formulario h1{
@@ -239,13 +265,24 @@ header {
 
 .formulario input{
     width: 95%;
-    border-radius: 4px;
-    border: 1px solid green;
-    font-family: "calibri";
-    color: rgb(241, 9, 214); 
+    border-radius: 10px;
+    background-color: rgba(83, 83, 83, 0.096);  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    transition: all 0.55s;
 }
 
 .formulario input:hover{
-    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color:  1px solid white;
 }
 
+.eni{
+    background: none;
+    border: none;
+    width: 130px;
+    margin: auto;
+    color: gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:115%;
+}

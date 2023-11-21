@@ -5,6 +5,34 @@ const c = document.querySelector("#c");
 const ce = document.querySelector("#ce");
 const cer = document.querySelector("#cer");
 const logo = document.querySelector("#logo");
+const formulario = document.querySelector("#aparecer");
+const foe = document.querySelector("#foe");
+const cere = document.querySelector("#cere");
+const cabe = document.querySelector("#cabe");
+
+formulario.addEventListener("click", () =>{
+    foe.classList.add("aparecer");
+})
+
+formulario.addEventListener("click", () =>{
+    foe.classList.remove("fx");
+})
+
+cere.addEventListener("click", () =>{
+    foe.classList.add("fx");
+})
+
+cere.addEventListener("click", () =>{
+    foe.classList.remove("aparecer");
+})
+
+abrir.addEventListener("click", () => {
+    cabe.classList.add("esspa");
+})
+
+cerrar.addEventListener("click", () => {
+    cabe.classList.remove("esspa");
+})
 
 abrir.addEventListener("click", () => {
     abrir.classList.add("ocultar");
