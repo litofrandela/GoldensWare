@@ -8,27 +8,6 @@
 <body>
 <a href="">Ir a la pagina principal</a>
 <br>
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "test";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die("La conexión falló: " . mysqli_connect_error());
-}
-
-$objeto = $_POST['O1'];
-$detalle = $_POST['D1'];
-$precio = $_POST['precio'];
-$imagen = $_POST['imagen'];
-
-$sql = "INSERT INTO `compradores`( objeto, detalle, precio, imagen) VALUES ('$objeto','$detalle','$precio','$imagen')";
-
-?>
-<br>
 
  
 </body>

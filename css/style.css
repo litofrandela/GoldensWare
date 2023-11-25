@@ -1,16 +1,16 @@
-.cuerpo{
+.cuerpo {
     margin: 0px;
     padding: 0px;
-    background-color:#141414;
     background-image: url(/img/fondo.jpg);
-    background-size:auto;
+    background-color: rgb(24, 24, 24);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position-x: center;
 }
 
 header {
     display: flex;
-    background-color:#585857be;
+    background-color: #585857be;
     align-items: center;
     backdrop-filter: blur(2px);
 }
@@ -20,7 +20,7 @@ header {
     border-radius: 2em;
 }
 
-.centrar{
+.centrar {
     backdrop-filter: blur(2px);
     text-align: center;
     background-color: #585857be;
@@ -38,10 +38,13 @@ header {
 @media screen and (max-width:548px) {
     header {
         justify-content: space-between;
+        background-color: #585857be;
     }
 
-    .esspa{
-        margin-bottom: 230px;
+    .esspa {
+        display: block;
+        padding: 130px;
+        background-color: #585857be;
     }
 
     .logo {
@@ -136,20 +139,21 @@ header {
     padding: 0px;
 }
 
-.color{
+.color {
     color: aliceblue;
     text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 4px;
     transition: all 0.35s;
 }
 
-.color:hover{
-    color:white;
+.color:hover {
+    color: white;
 }
+
 /*Cards styles*/
 
-.container{
+.container {
     color: rgb(0, 0, 0);
     text-align: center;
     width: 100%;
@@ -160,12 +164,12 @@ header {
     justify-content: center;
     margin: auto;
     margin-top: 50px;
-    margin-bottom:630px;
+    margin-bottom: 630px;
 }
 
-.container .card{
+.container .card {
     margin-bottom: 50px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     width: 270px;
     padding: 4px;
@@ -177,112 +181,171 @@ header {
     font-size: 1em;
 }
 
-@media screen and (max-width:767px) {
-    .container .card{
-        margin-right: auto;
+
+@media screen and (max-width:971px) {
+    .container .card {
+        margin-left: 50px;
     }
 }
 
-.container .card:hover{
-    background-color: rgb(48, 48, 48);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgb(0, 0, 0);
-    color: white;
-    padding: 6px;
-    font-size: 3em;
+@media screen and (max-width:767px) {
+    .container .card {
+        margin-right: auto;
+    }
+
+    .container .card {
+        margin-left:auto;
+    }
 }
 
-.container .card img{
+
+
+.container .card img {
     width: auto;
     height: auto;
     border-radius: 8px;
 }
 
-.texto{
+.texto {
     text-align: justify;
     font-size: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.text2{
+.text2 {
     text-align: justify;
     font-size: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 80px;
 }
 
 /*Formulario*/
 
-form{
+form {
     margin-bottom: 20px;
 }
 
-.fx{
+.fx {
     display: none;
 }
 
-.formulario{
+.formulario {
     margin-top: 5px;
     padding: 2px;
     background-color: rgba(0, 0, 0, 0.350);
     border-radius: 4px;
     box-shadow: 7px 13px 37px #00000069;
     display: flexbox;
-    box-sizing: content-box; 
+    box-sizing: content-box;
     text-align: center;
     width: 400px;
     margin: auto;
     transition: all 0.40s;
 }
 
-.formulario:hover{
+.formulario:hover {
     background-color: rgba(0, 0, 0, 0.750);
     box-shadow: 7px 13px 37px #000000f3;
 }
 
-.formulario h4{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.formulario h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: gold;
 }
 
-.desaparecer{
+.desaparecer {
     background: none;
     border: none;
     width: 130px;
     margin: auto;
     color: gray;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
 }
 
-.aparecer{
+.aparecer {
     display: block;
 }
 
-.formulario h1{
+.formulario h1 {
     text-align: left;
 }
 
-.formulario input{
+.formulario input {
     width: 95%;
     border-radius: 10px;
-    background-color: rgba(83, 83, 83, 0.096);  
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(83, 83, 83, 0.096);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: gray;
     transition: all 0.55s;
 }
 
-.formulario input:hover{
+.formulario input:hover {
     border-radius: 5px;
-    border-color:  1px solid white;
+    border-color: 1px solid white;
 }
 
-.eni{
+.eni {
     background: none;
     border: none;
     width: 130px;
     margin: auto;
     color: gray;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:115%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 115%;
+}
+
+/*Footer*/
+
+.c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.pie {
+    display: inline-flex;
+    margin: auto;
+    padding-top: 30px;
+    
+}
+
+.imguno {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+}
+
+.imgdos {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+}
+
+.aset {
+    padding-top: 5px;
+    padding-left: 15px;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 115%;
+}
+
+.tesa {
+    padding-top: 5px;
+    padding-left: 15px;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 115%;
+}
+
+@media screen and (max-width:768px) {
+    .pie {
+        display: block;
+        margin: auto;
+        padding-top: 30px;
+    }
 }
