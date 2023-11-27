@@ -46,12 +46,24 @@ c.addEventListener("click", () => {
     abrir.classList.remove("ocultar");
 })
 
+c.addEventListener("click", () => {
+    cabe.classList.remove("esspa");
+})
+
 ce.addEventListener("click", () => {
     abrir.classList.remove("ocultar");
 })
 
+ce.addEventListener("click", ()=>{
+    cabe.classList.remove("esspa");
+})
+
 cer.addEventListener("click", () => {
     abrir.classList.remove("ocultar");
+})
+
+cer.addEventListener("click", ()=>{
+    cabe.classList.remove("esspa");
 })
 
 abrir.addEventListener("click", () => {

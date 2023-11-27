@@ -17,17 +17,17 @@
   <div class="centrar">
     <img src="img/logodelaempresa.png" class="logo" id="logo">
   </div>
-  <header class="" id="cabe">
+  <header id="cabe">
     <button id="abrir" class="abrir-menu"><img src="img/menu.svg" alt=""></button>
     <nav class="no_ver" id="no_ver">
       <button class="cerrar-menu" id="cerrar"><img src="img/cerrar.svg" alt=""></button>
       <ul class="sacar">
         <li class="bord">
-          <a class="color" href="#taller" id="c">Talleres</a>
+          <a class="color" href="#objetos" id="c">Objetos</a>
         </li>
         <div class="espacio">
           <li class="bord">
-            <a class="color" href="#otros" id="ce">Otros</a>
+            <a class="color" href="#formulario" id="ce">Formulario</a>
           </li>
         </div>
         <div class="espacio">
@@ -41,10 +41,10 @@
   <!--Fin de cabeza-->
   <!--Cards-->
 
-  <div class="container">
+  <div class="container" id="objetos">
     <div class="row">
       <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
+        <img src="img/logo.jpg" alt="#" class="image">
         <h4 id="O1">PC</h4>
         <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
           doloribus quae quia assumenda
@@ -55,7 +55,6 @@
         </p>
         <input type="submit" id="precio" value="pere" class="texto">
       </div>
-
       <div class="card">
         <img src="img/logo.jpg" alt="#" class="image" value="logo">
         <h4 id="O1">PC</h4>
@@ -95,18 +94,6 @@
         <input type="submit" id="precio" value="pere" class="texto">
       </div>
 
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
 
       <div class="card">
         <img src="img/logo.jpg" alt="#" class="image" value="logo">
@@ -121,18 +108,6 @@
         <input type="submit" id="precio" value="pere" class="texto">
       </div>
 
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
 
       <div class="card">
         <img src="img/logo.jpg" alt="#" class="image" value="logo">
@@ -145,31 +120,42 @@
           <input type="text" class="text2" id="precio" value="100000" readonly>
         </p>
         <input type="submit" id="precio" value="pere" class="texto">
+      </div>
     </div>
-
-    <div class="row">
+    <div class="row c" id="formulario">
       <div class="col">
         <button class="desaparecer" id="aparecer">Formulario</button>
         <div class="fx" id="foe">
           <button class="desaparecer" id="cere">Cerrar</button>
-          <form name="formulario" method="post" action="datos.php">
-            <div class="formulario">
-              <div class="col">
-                <h4 class="maspequeño">Por favor, complete el formulario si quiere contactarnos.
-                </h4>
+          <div class="formulario">
+            <div class="col">
+              <h4 class="maspequeño">Por favor, complete el formulario si quiere contactarnos.
+              </h4>
+              <form name="formulario" method="post" action="php/compradores.php">
+                <input type="text" name="dni" id="dni" placeholder="DNI" inputmode="numeric" pattern="\d*" minlength="8"
+                  maxlength="8" required>"
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                 <input type="text" autocomplete="email" name="correo" id="correo" placeholder="Correo"
                   pattern="[^@]+@[^@]+\.[a-zA-Z]{3,6}" title="Ingrese el @ o el .com" maxlength="60" required>
-                <input type="text" name="dni" id="dni" placeholder="DNI" inputmode="numeric" pattern="\d*" minlength="8"
-                  maxlength="8" required>
                 <button type="submit" id="btn" name="bt" class="eni">Enviar</button>
-              </div>
+              </form>
             </div>
+          </div>
         </div>
-        </form>
       </div>
     </div>
+    <div class="row c">
+      <footer class="pie" id="ultimo">
+        <img src="img/direccion.png" class="imguno">
+        <p class="tesa">Salta 225</p>
+        <img src="img/contactos.png" class="imgdos">
+        <p class="aset">345 9 345 210-3452</p>
+        <img src="img/correo.png" class="imgdos">
+        <p class="aset">345 9 345 210-3452</p>
+      </footer>
+    </div>
   </div>
-
 
   <script src="js/menu.js"></script>
 
