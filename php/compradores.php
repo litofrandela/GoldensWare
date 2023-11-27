@@ -10,9 +10,16 @@
 <br>
 
 <?php
+<<<<<<< HEAD
 $servername = "localhost";
 $username = "id21540141_ware";
 $password = "Perro@12";
+=======
+
+$servername = "localhost";
+$username = "id21540141_ware";
+$password = "Elmascapo123-";
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 $database = "id21540141_goldens";
 
 $conn = mysqli_connect($servername,$username, $password, $database);
@@ -28,7 +35,11 @@ $Nombre = $_POST['nombre'];
 $Apellido = $_POST['apellido'];
 $Correo = $_POST['correo'];
 
+<<<<<<< HEAD
 $sql = "INSERT INTO compradores(dni, nombre, apellido, correo) VALUES ('$DNI','$Nombre','$Apellido','$Correo')";
+=======
+$sql = "INSERT INTO compradores( DNI, Nombre, Apellido, Correo) VALUES ('DNI','Nombre','Apellido','Correo')";
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 
 ?>
  

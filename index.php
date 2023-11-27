@@ -122,16 +122,29 @@
         <input type="submit" id="precio" value="pere" class="texto">
       </div>
     </div>
+<<<<<<< HEAD
     <div class="row c" id="formulario">
+=======
+    <div class="row c">
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
       <div class="col">
         <button class="desaparecer" id="aparecer">Formulario</button>
         <div class="fx" id="foe">
           <button class="desaparecer" id="cere">Cerrar</button>
+<<<<<<< HEAD
           <div class="formulario">
             <div class="col">
               <h4 class="maspequeño">Por favor, complete el formulario si quiere contactarnos.
               </h4>
               <form name="formulario" method="post" action="php/compradores.php">
+=======
+          
+            <div class="formulario">
+              <div class="col">
+                <h4 class="maspequeño">Por favor, complete el formulario si quiere contactarnos.
+                </h4>
+                <form name="formulario" method="post" action="php/compradores.php">
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
                 <input type="text" name="dni" id="dni" placeholder="DNI" inputmode="numeric" pattern="\d*" minlength="8"
                   maxlength="8" required>"
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -140,6 +153,10 @@
                   pattern="[^@]+@[^@]+\.[a-zA-Z]{3,6}" title="Ingrese el @ o el .com" maxlength="60" required>
                 <button type="submit" id="btn" name="bt" class="eni">Enviar</button>
               </form>
+<<<<<<< HEAD
+=======
+              </div>
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
             </div>
           </div>
         </div>

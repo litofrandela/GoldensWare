@@ -207,12 +207,20 @@ header {
 }
 
 .texto {
+<<<<<<< HEAD
+=======
+    text-align: justify;
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text2 {
+<<<<<<< HEAD
    
+=======
+    text-align: justify;
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 80px;
@@ -242,6 +250,7 @@ form {
     transition: all 0.40s;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:450px) {
     .formulario {
         width: 300px;
@@ -254,6 +263,8 @@ form {
     }
 }
 
+=======
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 .formulario:hover {
     background-color: rgba(0, 0, 0, 0.750);
     box-shadow: 7px 13px 37px #000000f3;
@@ -274,10 +285,13 @@ form {
     font-size: 120%;
 }
 
+<<<<<<< HEAD
 .desaparecer:hover{
     color: gold;
 }
 
+=======
+>>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 .aparecer {
     display: block;
 }
