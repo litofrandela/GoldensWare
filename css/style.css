@@ -142,7 +142,7 @@ header {
 .color {
     color: aliceblue;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     padding: 4px;
     transition: all 0.35s;
 }
@@ -155,7 +155,6 @@ header {
 
 .container {
     color: rgb(0, 0, 0);
-    text-align: center;
     width: 100%;
     max-width: 1200px;
     height: 430px;
@@ -173,14 +172,13 @@ header {
     margin-right: auto;
     width: 270px;
     padding: 2px;
-    height: 450px;
+    height: auto;
     background-color: rgba(162, 162, 162, 0.527);
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.25s;
     font-size: 1em;
 }
-
 
 @media screen and (max-width:971px) {
     .container .card {
@@ -198,34 +196,41 @@ header {
     }
 }
 
-
-
 .container .card img {
     width: auto;
     height: auto;
     border-radius: 8px;
 }
 
+#achicar{
+    width: 265px;
+    height: 170px;
+}
+
 .texto {
-<<<<<<< HEAD
-=======
-    text-align: justify;
->>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
+    font-size:1.1em;
+    text-align:center;
 }
 
 .text2 {
-<<<<<<< HEAD
-   
-=======
-    text-align: justify;
->>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
+    background:none;
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 80px;
+    font-family: 'Franklin Gothic Medium';
+    width: 100px;
+    font-size:1.1em;
+    text-align:center;
+    color:gold;
 }
 
+#tamano{
+    background:black;
+    border-radius:20px;
+    border:none;
+    font-size:1.3em;
+    color:white;
+}
 /*Formulario*/
 
 form {
@@ -250,7 +255,6 @@ form {
     transition: all 0.40s;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width:450px) {
     .formulario {
         width: 300px;
@@ -263,15 +267,13 @@ form {
     }
 }
 
-=======
->>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 .formulario:hover {
     background-color: rgba(0, 0, 0, 0.750);
     box-shadow: 7px 13px 37px #000000f3;
 }
 
 .formulario h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     color: gold;
 }
 
@@ -281,17 +283,14 @@ form {
     width: 130px;
     margin: auto;
     color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 120%;
 }
 
-<<<<<<< HEAD
 .desaparecer:hover{
     color: gold;
 }
 
-=======
->>>>>>> 81f96482a1ffc38a5a6230b4231779e81a1b8317
 .aparecer {
     display: block;
 }
@@ -304,7 +303,7 @@ form {
     width: 95%;
     border-radius: 10px;
     background-color: rgba(83, 83, 83, 0.096);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     color: gray;
     transition: all 0.55s;
 }
@@ -320,7 +319,7 @@ form {
     width: 130px;
     margin: auto;
     color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 115%;
 }
 
@@ -359,7 +358,7 @@ form {
     padding-top: 5px;
     padding-left: 15px;
     color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 115%;
 }
 
@@ -367,7 +366,7 @@ form {
     padding-top: 5px;
     padding-left: 15px;
     color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 115%;
 }
 
