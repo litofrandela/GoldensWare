@@ -178,6 +178,7 @@ header {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.25s;
     font-size: 1em;
+    
 }
 
 @media screen and (max-width:971px) {
@@ -212,6 +213,7 @@ header {
     font-family: 'Franklin Gothic Medium';
     font-size:1.1em;
     text-align:center;
+    margin:auto;
 }
 
 .text2 {
@@ -222,6 +224,7 @@ header {
     font-size:1.1em;
     text-align:center;
     color:gold;
+    margin:auto;
 }
 
 #tamano{
