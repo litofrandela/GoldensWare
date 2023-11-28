@@ -79,7 +79,7 @@
             <div class="col">
               <h4 class="maspequeño">Por favor, complete el formulario si quiere contactarnos.
               </h4>
-              <form name="formulario" method="post" action="php/compradores.php">
+              <form name="formulario" method="post" action="compradores.php">
                 <input type="text" name="dni" id="dni" placeholder="DNI" inputmode="numeric" pattern="\d*" minlength="8"
                   maxlength="8" required>"
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -104,6 +104,60 @@
       </footer>
     </div>
   </div>
+
+
+<script>
+        (function () {
+
+            var formulario = document.getElementsByName('formulario')[0],
+                Elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            var validarCorreo = function (e) {
+                if (formulario.correo.value == 0) {
+                    alert("Completa el campo correo");
+                    e.preventDefault();
+                }
+            };
+
+            var validarDni = function (e) {
+                if (formulario.dni.value == 0) {
+                    alert("Completa el campo DNI");
+                    e.preventDefault();
+                }
+            };
+
+            var validarNombre = function (e) {
+                if (formulario.nombre.value == 0) {
+                    alert("Completa el campo nombre");
+                    e.preventDefault();
+                }
+            };
+            
+            var validarApellido = function (e) {
+                if (formulario.apellido.value == 0) {
+                    alert("Completa el campo apellido");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function (e) {
+                validarCorreo(e);
+                validarDni(e);
+                validarNombre(e);
+                validarApellido(e);
+            };
+
+
+
+            formulario.addEventListener("submit", validar);
+        }())
+
+
+
+    </script>
+
+
 
   <script src="js/menu.js"></script>
 
