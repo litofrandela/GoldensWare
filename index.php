@@ -23,7 +23,7 @@
       <button class="cerrar-menu" id="cerrar"><img src="img/cerrar.svg" alt=""></button>
       <ul class="sacar">
         <li class="bord">
-          <a class="color" href="#objetos" id="c">Objetos</a>
+          <a class="color" href="#objetos" id="c">Productos</a>
         </li>
         <div class="espacio">
           <li class="bord">
@@ -43,84 +43,32 @@
 
   <div class="container" id="objetos">
     <div class="row">
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
+             <?php
+      require_once "conexion.php";
 
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
+        // Paso 2: Consultar los datos
+        $consulta = "SELECT * FROM partes";
+        $resultado = mysqli_query($conn, $consulta);
 
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
+        // Paso 3: Iterar sobre los resultados y generar tarjetas de Bootstrap
+        while ($fila = mysqli_fetch_assoc($resultado)) {
+            ?>
+                <div class="card">
+                    <img src="<?php echo $fila['imagenes']; ?>" id="achicar" class="card-img-top" alt="...">
+                    <div class="texto" name="D1">
+                        <h4 id="O1"><?php echo $fila['objeto']; ?></h4>
+                        <p  name="D1"><?php echo $fila['detalle']; ?><br> Precio:
+                        <input type="text" class="text2" id="precio" value="<?php echo $fila['precio']; ?>" readonly>
+                        </p>
+                        <input type="submit" id="tamano" value="Comprar" class="texto">
+                    </div>
+                </div>
+            <?php
+        }
 
-
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
-
-
-      <div class="card">
-        <img src="img/logo.jpg" alt="#" class="image" value="logo">
-        <h4 id="O1">PC</h4>
-        <p class="texto" name="D1">Detalles:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nisi atque,
-          doloribus quae quia assumenda
-          deleniti ullam voluptas iure voluptatibus cupiditate accusantium quaerat repellat corporis libero totam
-          tempore
-          vero dignissimos.
-          <input type="text" class="text2" id="precio" value="100000" readonly>
-        </p>
-        <input type="submit" id="precio" value="pere" class="texto">
-      </div>
+        // Paso 4: Cerrar la conexión
+        mysqli_close($conn);
+        ?>
     </div>
     <div class="row c" id="formulario">
       <div class="col">
@@ -138,7 +86,7 @@
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                 <input type="text" autocomplete="email" name="correo" id="correo" placeholder="Correo"
                   pattern="[^@]+@[^@]+\.[a-zA-Z]{3,6}" title="Ingrese el @ o el .com" maxlength="60" required>
-                <button type="submit" id="btn" name="bt" class="eni">Enviar</button>
+                <input type="submit" id="btn" name="bt" class="eni" placeholder="Enviar">
               </form>
             </div>
           </div>
